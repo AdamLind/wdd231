@@ -1,0 +1,48 @@
+@media screen and (min-width: 740px) {
+    nav {
+        display: inline;
+        width: auto;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .disappear {
+        display: inline;
+    }
+
+    .list-wrapper {
+        display: inline;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 100%;
+    }
+    
+    .navigation a {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #menu {
+		display: none;
+	}
+
+    .filter {
+        flex-direction: row;
+    }
+
+    #links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+}

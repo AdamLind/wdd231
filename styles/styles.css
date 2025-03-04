@@ -1,0 +1,311 @@
+:root {
+    --primary-color: #004d00;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul {
+    margin: 0;
+}
+  
+
+body {
+    margin: 0px;
+    font-family: "Parkinsans", serif;
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+.header img {
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+.head-rearrange {
+    padding: 0;
+}
+
+#menu {
+    content: "X";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 10px;
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	color: white;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.list-wrapper {
+    display: none;
+}
+
+.list-wrapper.show {
+    display: inline;
+}
+
+nav {
+	background-color: var(--primary-color);
+    width: 100%;
+}
+.navigation {
+	list-style: none;
+    padding: 0;
+	margin: 0 auto;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+    padding: 10px;
+	display: block;
+	text-align: center;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: white;
+    background-color: #343434;
+    font-size: 24px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.navigation a:hover, .navigation a:active {
+    box-shadow: inset 800px 0 0 0 rgb(188, 255, 180);
+    color: black;
+}
+
+.show li {
+	display: block;
+    position: relative;
+    width: 100%;
+}
+
+.disappear {
+    display: none;
+}
+
+#menu.show::before {
+	content: "X";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main img {
+    float: left;
+    width: 300px;
+    padding: 20px;
+}
+
+.main-wrapper {
+    align-self: center;
+    width: 100%;
+    max-width: 1480px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+}
+
+.certificate-links {
+    grid-column: 1/ span 2
+}
+
+.card h2 {
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.right-content-wrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content-wrapper figure {
+    margin: 10px 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    width: 80%;
+}
+
+.right-content-wrapper figcaption {
+    text-align: center;
+    color: gray;
+}
+
+main p { 
+    padding: 20px;
+    font-size: 20px;
+}
+
+.resource-links {
+    margin-top: 10px;
+}
+
+.resource-links a {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: inset 0 0 0 0 rgb(188, 255, 180);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.resource-links a:hover {
+    box-shadow: inset 500px 0 0 0 rgb(188, 255, 180);
+    color: black;
+}
+
+.project-link {
+    color: rgb(224, 72, 22);
+}
+
+.certificate-links h2 {
+    text-wrap: wrap;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    text-align: center;
+    border-bottom: 2px solid gray;
+    padding: 10px 0px;
+}
+
+.filter input {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.filter label {
+    margin: 10px;
+    width: 150px;
+    padding: 4px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+.filter label:hover {
+    background-color: gray;
+}
+
+.filter input:checked+label {
+    background-color: rgb(188, 255, 180);
+    color: black;
+} 
+
+#links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#links a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: white;
+    background-color: #343434;
+    font-size: 24px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#links a:hover {
+    box-shadow: inset 500px 0 0 0 rgb(188, 255, 180);
+    color: black;
+}
+
+.filteredLink {
+    padding: 10px;
+    margin: 20px;
+    background-color: lightgray;
+    vertical-align: middle;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+#links .filteredLinkComplete {
+    background-color:rgb(0, 86, 118);
+}
+
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
