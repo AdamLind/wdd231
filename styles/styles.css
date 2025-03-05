@@ -45,8 +45,8 @@ body {
 
 .header img {
     border-radius: 10px;
+    width: 153px;
     height: 150px;
-    width: 150px;
 }
 .head-rearrange {
     padding: 0;
@@ -63,6 +63,8 @@ body {
 	font-weight:700;
 	text-decoration: none;
 	color: white;
+    background-color: var(--primary-color);
+    border: none;
 }
 
 #menu::before {
@@ -266,6 +268,7 @@ main p {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 #links a {
@@ -284,6 +287,7 @@ main p {
 .filteredLink {
     padding: 10px;
     margin: 20px;
+    width: 250px;
     background-color: lightgray;
     border: 2px solid gray;
     border-radius: 5px;
