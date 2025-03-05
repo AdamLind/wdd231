@@ -12,6 +12,10 @@
         display: inline;
     }
 
+    .main-wrapper {
+        height: 780px;
+    }
+
     .list-wrapper {
         display: inline;
     }
@@ -54,6 +58,10 @@
 
     .certificate-links h2 {
         width: 700px;
+    }
+
+    #credits {
+        height: 71px;
     }
 
     #credits p {
