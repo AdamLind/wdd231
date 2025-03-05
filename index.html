@@ -10,8 +10,8 @@
     />
     <meta name="author" content="Adam Lind" />
 
-    <link rel="stylesheet" href="styles/styles.css" defer />
-    <link rel="stylesheet" href="styles/filtered-links-large.css" defer />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/filtered-links-large.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,7 +41,12 @@
             >
           </li>
           <li>
-            <a href="/" target="_blank" rel="noreferrer">Chamber</a>
+            <a 
+              href="/" 
+              target="_blank" 
+              rel="noreferrer"
+              >Chamber</a
+            >
           </li>
           <li>
             <a
@@ -61,7 +66,7 @@
           </li>
         </ul>
       </nav>
-      <button id="menu" href="#" aria-label="Hamburger Menu"></button>
+      <a id="menu" href="#" aria-label="Hamburger Menu"></a>
     </header>
     <main>
       <h1>Homepage</h1>
@@ -83,7 +88,10 @@
                   media="(min-width:740px)"
                   srcset="images/delicate-arch-optimized.jpg"
                 />
-                <img src="images/delicate-arch-small.jpg" alt="Utah Landscape" />
+                <img
+                  src="images/delicate-arch-small.jpg"
+                  alt="Utah Landscape"
+                />
               </picture>
               <figcaption>Delicate Arch</figcaption>
             </figure>
