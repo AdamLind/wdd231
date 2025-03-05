@@ -188,7 +188,6 @@ figure img {
 
 .right-content-wrapper figcaption {
     text-align: center;
-    color: gray;
 }
 
 main p { 
@@ -286,7 +285,6 @@ main p {
     padding: 10px;
     margin: 20px;
     background-color: lightgray;
-    vertical-align: middle;
     border: 2px solid gray;
     border-radius: 5px;
 }
@@ -297,9 +295,6 @@ main p {
 
 
 footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
     text-align: center;
     background-color: var(--primary-color);
 }
