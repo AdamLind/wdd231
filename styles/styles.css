@@ -108,6 +108,11 @@ nav {
     color: black;
 }
 
+.navigation a.active {
+    color: black;
+    background-color: rgb(188, 255, 180); 
+}
+
 .show li {
 	display: block;
     position: relative;
@@ -263,6 +268,11 @@ main p {
     background-color: rgb(188, 255, 180);
     color: black;
 } 
+
+#credits {
+    border-bottom: 2px solid gray;
+    text-align: center;
+}
 
 #links {
     display: flex;
