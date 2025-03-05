@@ -4,8 +4,8 @@
         width: auto;
     }
 
-    .header {
-        font-size: 1.5rem;
+    .header h1 {
+        font-size: 3rem;
     }
 
     .disappear {
@@ -39,9 +39,26 @@
     figure img {
         width: 300px;
     }
+    
+    .right-content-wrapper figcaption {
+        width: 150px;
+    }
 
     .filter {
         flex-direction: row;
+    }
+
+    .certificate-links {
+        height: 400px;
+    }
+
+    .certificate-links h2 {
+        width: 700px;
+    }
+
+    #credits p {
+        width: 500px;
+        height: 29px;
     }
 
     #links {
@@ -50,7 +67,11 @@
         text-align: center;
     }
 
-    #links a {
+    #links div {
         width: auto;
+    }
+
+    footer p {
+        width: 700px;
     }
 }
