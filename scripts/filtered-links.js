@@ -107,7 +107,7 @@ function createLinks(filteredLinks) {
 	linkContainer.innerHTML = ''; // Clears all child nodes
 	creditContainer.innerHTML = ''; // Clears all child nodes
 	filteredLinks.map(link => {
-		const card = document.createElement("a");
+		const card = document.createElement("div");
 		card.classList.add("filteredLink")
 		link.completed ? 
 			card.classList.add("filteredLinkComplete")

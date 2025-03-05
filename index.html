@@ -10,8 +10,8 @@
     />
     <meta name="author" content="Adam Lind" />
 
-    <link rel="stylesheet" href="styles/styles.css" defer/>
-    <link rel="stylesheet" href="styles/filtered-links-large.css" defer/>
+    <link rel="stylesheet" href="styles/styles.css" defer />
+    <link rel="stylesheet" href="styles/filtered-links-large.css" defer />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,19 +26,30 @@
   <body>
     <header>
       <div class="header">
-        <img src="images/profile.jpg" alt="Adam Lind" width="200" />
+        <img src="images/profile.jpg" alt="Adam Lind" />
         <h1>Adam S. Lind</h1>
       </div>
       <nav class="list-wrapper">
         <ul class="navigation">
           <li>
-            <a class="active" href="/index.html" target="_blank" rel="noreferrer">Home</a>
+            <a
+              class="active"
+              href="/index.html"
+              target="_blank"
+              rel="noreferrer"
+              >Home</a
+            >
           </li>
-          <li>        
+          <li>
             <a href="/" target="_blank" rel="noreferrer">Chamber</a>
           </li>
           <li>
-            <a href="https://github.com/AdamLind" target="_blank" rel="noreferrer">GitHub Profile</a>
+            <a
+              href="https://github.com/AdamLind"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub Profile</a
+            >
           </li>
           <li>
             <a
@@ -67,10 +78,13 @@
           <h2>Utah</h2>
           <div class="right-content-wrapper">
             <figure>
-              <img
-                src="images/delicate-arch-optimized.jpg"
-                alt="Utah Landscape"
-              />
+              <picture>
+                <source
+                  media="(min-width:740px)"
+                  srcset="images/delicate-arch-optimized.jpg"
+                />
+                <img src="images/delicate-arch-small.jpg" alt="Utah Landscape" />
+              </picture>
               <figcaption>Delicate Arch</figcaption>
             </figure>
             <div class="portrait-wrapper"></div>
