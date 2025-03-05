@@ -10,8 +10,31 @@
     />
     <meta name="author" content="Adam Lind" />
 
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/filtered-links-large.css" />
+    <!-- <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/filtered-links-large.css" /> -->
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="styles/styles.css"
+    />
+    <link
+    rel="preload"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+    href="styles/filtered-links-large.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="styles/styles.css"
+      />
+      <link
+        rel="stylesheet"
+        href="styles/filtered-links-large.css"
+      />
+    </noscript>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

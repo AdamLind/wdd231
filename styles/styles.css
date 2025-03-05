@@ -261,7 +261,6 @@ main p {
 .filter input {
     position: fixed;
     opacity: 0;
-    pointer-events: none;
 }
 
 .filter label {
