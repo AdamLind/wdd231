@@ -95,7 +95,7 @@
     }
 
     tr:nth-child(even) {
-        background-color:rgb(221, 252, 225);
+        background-color:var(--accent-color);
       }
     
     .grid-display {
