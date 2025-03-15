@@ -10,15 +10,121 @@
     />
     <meta name="author" content="Adam Lind" />
 
-    <meta property="og:title" content="Chamber of Commerce" />
+    <meta property="og:title" content="Chamber of Commerce Directory" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Chamber Directory Page assignment for Adam Lind in the WDD 231 class." />
     <meta property="og:image" content="https://wasatchmovingco.com/wp-content/uploads/2024/09/The-skyline-of-Provo-Utah.jpg" />
     <meta property="og:url" content="adamlind.github.io/wdd231/chamber/directory.html" />
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-links.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="header-top">
+            <div class="title">
+                <img src="images/android-chrome-192x192.png" alt="Adam Lind"/>
+                <div class="subtitle">
+                    <h1>Provo</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <nav class="list-wrapper">
+                <ul class="navigation">
+                    <li>
+                    <a href="/chamber/index.html" target="_blank" rel="noreferrer">Home</a>
+                    </li>
+                    <li>
+                    <a class="active" href="/chamber/directory.html" target="_blank" rel="noreferrer">Directory</a>
+                    </li>
+                    <li>
+                    <a href="/chamber/join.html" target="_blank" rel="noreferrer">Join</a>
+                    </li>
+                    <li>
+                    <a href="/chamber/discover.html" target="_blank" rel="noreferrer">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+            <a id="menu" href="#" aria-label="Hamburger Menu"></a>
+        </div>
+        <div class="keynote-tickets">
+            <img src="images/small_hero_optimized.png" alt="hero image"></img>
+            <a href="directory.html">Keynote Tickets</a>
+        </div>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="main-content">
+            <div class="events">
+                <h2>Events</h2>
+                <div></div>
+            </div>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="current-weather-content">
+                    <img src="images/1530391_weather_clouds_sun_sunny_icon.png" alt="">
+                    <div>
+                        <p><span class="temp">75°</span> F</p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 85°<span></span></p>
+                        <p>Low: 52°<span></span></p>
+                        <p>Humidity: 34%<span></span></p>
+                        <p>Sunrise: 7:30am<span></span></p>
+                        <p>Sunset: 9:59pm<span></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div>
+                    <p>Today: <span class="temp">90°</span><span></span></p>
+                    <p>Wednesday: <span class="temp">89°</span><span></span></p>
+                    <p>Thursday: <span class="temp">68°</span><span></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="filter">
+            <input type="radio" id="grid" name="display" value="GRID" checked/>
+            <label for="grid">Grid</label>
+            <input type="radio" id="list" name="display" value="LIST" />
+            <label for="list">List</label>
+        </div>
+        <div class="business-cards grid-display"></div>
+    </main>
+    <footer>
+        <div class="chamber-info">
+            <p>Provo Chamber of Commerce</p>
+            <p>100 S St</p>
+            <p>Provo, Utah 84601</p>
+            <p>info@provocc.org</p>
+            <p>(385) 222-2048</p>
+        </div>    
+        <div class="social-links">
+            <a href="https://youtube.com">
+                <img src="images/icons8-youtube-30.png" alt="Youtube">
+            </a>            
+            <a href="https://x.com">
+                <img src="images/icons8-x-50.png" alt="Youtube">
+            </a>            
+            <a href="https://linkedin.com">
+                <img src="images/icons8-linkedin-30.png" alt="Youtube">
+            </a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Adam Lind</p>
+            <p>&copy; <span id="currentyear"></span> Provo Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>
