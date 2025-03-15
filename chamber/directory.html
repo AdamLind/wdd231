@@ -13,8 +13,8 @@
     <meta property="og:title" content="Chamber of Commerce Directory" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Chamber Directory Page assignment for Adam Lind in the WDD 231 class." />
-    <meta property="og:image" content="https://wasatchmovingco.com/wp-content/uploads/2024/09/The-skyline-of-Provo-Utah.jpg" />
-    <meta property="og:url" content="adamlind.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:image" content="https://adamlind.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:url" content="https://adamlind.github.io/wdd231/chamber/directory.html" />
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     
@@ -57,7 +57,10 @@
             <a id="menu" href="#" aria-label="Hamburger Menu"></a>
         </div>
         <div class="keynote-tickets">
-            <img src="images/small_hero_optimized.png" alt="hero image"></img>
+            <picture>
+                <source media="(min-width:740px)" srcset="images/hero_optimized_min.png">
+                <img src="images/small_hero_optimized.png" alt="hero image">
+            </picture>
             <a href="directory.html">Keynote Tickets</a>
         </div>
     </header>
