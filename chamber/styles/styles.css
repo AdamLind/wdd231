@@ -209,17 +209,35 @@ main h1 {
     font-weight: bold;
 }
 
+.current-weather-content {
+    gap: 10px;
+}
+
 .current-weather-content div {
     display: flex;
     flex-direction: column;
 }
 
+
 .current-weather-content p {
     margin: 2px 0;
 }
 
-.current-weather-content img {
-    height: 90px;
+.current-weather-content figcaption {
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100px;
+    font-weight: bold;
+}
+
+#current-temp {
+    font-size: 1.5rem;
+}
+
+#weather-icon {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--secondary-color);
 }
 
 .weather-forecast p {
@@ -295,7 +313,7 @@ main h1 {
 .member-card-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 0;
+    padding: 10px;
 }
 
 .member-image {

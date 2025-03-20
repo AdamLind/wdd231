@@ -7,7 +7,7 @@
         "phoneNumber": "1234567789",
         "webURL": "www.testurl.com",
         "icon": "https://media.licdn.com/dms/image/v2/C4E0BAQFnFvbjs_Nuag/company-logo_100_100/company-logo_100_100/0/1631301290760?e=2147483647&v=beta&t=sYScd9OvXBeFYmQi4yXrnQQd9GJP6kLomQ58PCq_WGs",
-        "membershipLevel": "1"
+        "membershipLevel": "Gold"
     },
     {
         "name": "O'LEARL",
@@ -17,7 +17,7 @@
         "phoneNumber": "1234567789",
         "webURL": "www.testurl.com",
         "icon": "https://i.pinimg.com/474x/df/80/3a/df803a6295ba545b2648717ebd59e0b9.jpg",
-        "membershipLevel": "1"
+        "membershipLevel": "Gold"
     },
     {
         "name": "Mango",
@@ -27,7 +27,7 @@
         "phoneNumber": "1234567789",
         "webURL": "www.testurl.com",
         "icon": "https://ichef.bbci.co.uk/images/ic/256xn/p072q9m1.jpg",
-        "membershipLevel": "1"
+        "membershipLevel": "Silver"
     },
     {
         "name": "Mountain",
@@ -37,7 +37,7 @@
         "phoneNumber": "1234567789",
         "webURL": "www.testurl.com",
         "icon": "https://cdn.prod.website-files.com/65a5802c1ede0b585485cd96/65c3cc1b0e4c4b405845bb22_ace-hardware-logo.svg",
-        "membershipLevel": "1"
+        "membershipLevel": "Silver"
     },
     {
         "name": "ADent",
@@ -47,7 +47,7 @@
         "phoneNumber": "1234567789",
         "webURL": "www.testurl.com",
         "icon": "https://static-00.iconduck.com/assets.00/bmw-icon-256x256-ulxsrb1f.png",
-        "membershipLevel": "1"
+        "membershipLevel": "Silver"
     },
     {
         "name": "M3",
@@ -57,7 +57,7 @@
         "phoneNumber": "1234567789",
         "webURL": "www.testurl.com",
         "icon": "https://play-lh.googleusercontent.com/yhI4CFIV-RwqHk3I-i1Ln9fRaC8YGgHQSegzkxQv4QKRRZLK-CqCixvR2EtcJIJadqY=s256-rw",
-        "membershipLevel": "1"
+        "membershipLevel": "Bronze"
     },
     {
         "name": "H-Corp",
@@ -67,6 +67,6 @@
         "phoneNumber": "1234567789",
         "webURL": "www.testurl.com",
         "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVghVMpeq8gi1PV-utfq_aneoIhTQYj7M_mQ&s",
-        "membershipLevel": "1"
+        "membershipLevel": "Bronze"
     }
 ]
