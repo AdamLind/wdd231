@@ -28,8 +28,6 @@ function createRandomCards(memberList) {
             let rnd = Math.floor(Math.random() * memberList.length)
             if (memberList[rnd].membershipLevel == "Gold" || memberList[rnd].membershipLevel == "Silver") {
                 newMemberList.push(memberList[rnd])
-                console.log(memberList[rnd])
-                console.log(memberList[rnd].membershipLevel)
                 break;
             }
             else {

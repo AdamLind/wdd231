@@ -67,6 +67,9 @@
         gap: 10px;
     }
 
+    figure img {
+    }
+
     .events {
         height: 100%;
     }

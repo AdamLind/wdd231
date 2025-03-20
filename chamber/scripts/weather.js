@@ -7,6 +7,8 @@ const low = document.querySelector('#current-low');
 const humidity = document.querySelector('#humidity');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
+const tomorrowContainer = document.querySelector('#tomorrow-day')
+const dayAfterContainer = document.querySelector('#day-after-day')
 const currentForecast = document.querySelector('#current-forecast');
 const tomorrowForecast = document.querySelector('#tomorrow-forecast');
 const dayAfterForecast = document.querySelector('#day-after-forecast');
@@ -24,11 +26,12 @@ async function apiFetch(url, functionNum) {
         const data = await response.json();
         // console.log(data); // testing only
         if (functionNum == 1)
-        {
+        {   
             displayCurrentResults(data); // uncomment when ready
         }
         else if (functionNum == 2)
         {
+            console.log(data)
             displayForecastResults(data);
         }
     } else {
@@ -60,7 +63,13 @@ function displayCurrentResults(data) {
   }
 
 function displayForecastResults(data) {
-    currentForecast.innerHTML = `${data.list[0].main.temp}&deg;F`
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let dayObj1 = new Date(data.list[6].dt * 1000)
+    let dayObj2 = new Date(data.list[14].dt * 1000)
+    
+    tomorrowContainer.innerHTML = `${days[dayObj1.getDay()]}: `
+    dayAfterContainer.innerHTML = `${days[dayObj2.getDay()]}: `
+    currentForecast.innerHTML = `${data.list[6].main.temp}&deg;F`
     tomorrowForecast.innerHTML = `${data.list[8].main.temp}&deg;F`
     dayAfterForecast.innerHTML = `${data.list[16].main.temp}&deg;F`
 }
