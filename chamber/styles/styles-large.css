@@ -81,6 +81,7 @@
     .business-cards {
         margin-bottom: 30px;
         grid-column: 1/ span 3;
+        height: auto;
     }
 
     .list-styles {
@@ -117,5 +118,15 @@
     footer {
         display: flex;
         justify-content: space-between;
+        height: auto;
+    }
+
+    .social-links a {
+        height: 30px;
+    }
+
+    .social-links a img {
+        height: 30px;
+        width: 30px;
     }
 }
