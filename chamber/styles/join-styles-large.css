@@ -1,0 +1,22 @@
+@media screen and (min-width: 740px) {
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    section {
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    .membership-card {
+        width: 90%;
+    }
+
+}

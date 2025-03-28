@@ -1,0 +1,138 @@
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes oscilate {
+    4% {
+        opacity: 0.6;
+    }
+    8% {
+        opacity: 1;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, select {
+    padding: 8px;
+}
+
+textarea {
+    height: 100px;
+    font-family: roboto;
+}
+
+.optional-text {
+    font-size: 10px;
+    color: green;
+}
+
+.membership-card {
+    opacity: 0;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0 10px;
+}
+
+.np {
+    animation: fadeIn 1s forwards, oscilate 10s infinite 1s;
+    background-color: rgb(181, 247, 249);
+    border: 2px solid rgb(116, 159, 161);
+}
+
+.bronze {
+    animation: fadeIn 1s forwards .1s, oscilate 10s infinite 1.2s;
+    background-color: rgb(210, 180, 140);
+    border: 2px solid rgb(129, 110, 85);
+}
+
+.silver {
+    animation: fadeIn 1s forwards .2s, oscilate 10s infinite 1.3s;
+    background-color: rgb(222, 222, 222);
+    border: 2px solid rgb(136, 136, 136);
+}
+
+.gold {
+    animation: fadeIn 1s forwards .3s, oscilate 10s infinite 1.4s;
+    background-color: rgb(255, 225, 117);
+    border: 2px solid rgb(175, 152, 68);
+}
+
+.membership-card h2 {
+    font-size: 15px;
+}
+
+dialog[open] {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+::backdrop {
+    background: black;
+    opacity: .75;
+}
+
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal-top h3 {
+    margin: 0;
+}
+
+dialog button {
+    border: 1px solid transparent;
+    background: none;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+dialog button:hover {
+    border-radius: 3px;
+    border: 1px solid rgb(215, 215, 215);
+    background: rgb(245, 245, 245)
+}
+
+dialog button:active {
+    border: 1px solid rgb(164, 164, 164);
+    background: rgb(209, 209, 209)
+}
+
+ul {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}

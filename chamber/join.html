@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory Page</title>
+    <meta
+    name="description"
+    content="Chamber Directory Page for Adam Lind in the WDD 231 - Web Front-End Development class."
+    >
+    <meta name="author" content="Adam Lind">
+
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Chamber Directory Page assignment for Adam Lind in the WDD 231 class.">
+    <meta property="og:image" content="https://adamlind.github.io/wdd231/chamber/images/hero_optimized_min.png">
+    <meta property="og:url" content="https://adamlind.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="stylesheet" href="styles/join-styles.css">
+    <link rel="stylesheet" href="styles/join-styles-large.css">
+
+    <script src="scripts/hamburgermenu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="title">
+                <img src="images/android-chrome-192x192.png" alt="Adam Lind">
+                <div class="subtitle">
+                    <h2>Provo</h2>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <nav class="list-wrapper">
+                <ul class="navigation">
+                    <li>
+                    <a href="/wdd231/chamber/" rel="noreferrer">Home</a>
+                    </li>
+                    <li>
+                    <a href="/wdd231/chamber/directory.html" rel="noreferrer">Directory</a>
+                    </li>
+                    <li>
+                    <a class="active" href="/wdd231/chamber/join.html" rel="noreferrer">Join</a>
+                    </li>
+                    <li>
+                    <a href="/wdd231/chamber/discover.html" rel="noreferrer">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+            <a id="menu" href="#" aria-label="Hamburger Menu"></a>
+        </div>
+        <div class="keynote-tickets">
+            <picture>
+                <source media="(min-width:740px)" srcset="images/hero_optimized_min.png">
+                <img src="images/small_hero_optimized.png" alt="hero image">
+            </picture>
+            <a href="directory.html">Keynote Tickets</a>
+        </div>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get">
+            <h2>Membership Application Form</h2>
+
+            <div class="containers">
+                <label for="fname">
+                    First Name
+                    <input 
+                        type="text" 
+                        title="First Name" 
+                        name="fname" 
+                        id="fname" 
+                        class="bar-inputs" 
+                        placeholder="ex. John" 
+                        autocomplete="given-name"
+                    >
+                </label>
+            </div>            
+            <div class="containers">
+                <label for="lname">
+                    Last Name
+                    <input 
+                        type="text" 
+                        title="Last Name" 
+                        name="lname" 
+                        id="lname" 
+                        class="bar-inputs" 
+                        placeholder="ex. Doe" 
+                        autocomplete="family-name"
+                    >
+                </label>
+            </div>
+            <div class="containers">
+                <label for="title">
+                    Title
+                    <input 
+                        type="text" 
+                        title="Organizational Title" 
+                        name="title" 
+                        id="title" 
+                        class="bar-inputs" 
+                        placeholder="Organizational Title" autocomplete="organization-title" 
+                        pattern="[a-zA-Z0-9\- ]{7,}" 
+                        required
+                    >
+                </label>
+            </div>
+            <div class="containers">
+                <label for="email">
+                    Email
+                    <input 
+                        type="email" 
+                        title="Email" 
+                        name="email" 
+                        id="email" 
+                        class="bar-inputs" 
+                        placeholder="name@example.com"
+                        autocomplete="email"
+                        required
+                    >
+                </label>
+            </div>
+            <div class="containers">
+                <label for="phone">
+                    Phone Number
+                    <input 
+                        type="tel" 
+                        title="Phone Number" 
+                        name="phone" 
+                        id="phone" 
+                        class="bar-inputs" 
+                        placeholder="###-###-####"
+                        autocomplete="tel"
+                        required
+                    >
+                </label>
+            </div>
+            <div class="containers">
+                <label for="bus-name">
+                    Business/Organization Name
+                    <input 
+                        type="text" 
+                        title="Business/Organization Name" 
+                        name="bus-name" 
+                        id="bus-name" 
+                        class="bar-inputs" 
+                        placeholder="Something INC."
+                        autocomplete="organization"
+                        required
+                    >
+                </label>
+            </div>
+            <div class="containers">
+                <label for="select">
+                    Membership
+                    <select 
+                        name="select" 
+                        id="select" 
+                        class="bar-inputs"
+                    >
+                        <option selected value="" disabled>Select a Membership Level...</option>
+                        <option value="NP Membership">NP Membership</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
+                </label>
+            </div>
+            <div class="containers">
+                <label for="bus-desc">
+                    Business/Organization Description<span class="optional-text">(Optional)</span>
+                    <textarea name="bus-desc" id="bus-desc"></textarea>
+                </label>
+            </div>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Apply For Membership">
+        </form>
+        <section>
+            <h2>Membership Levels</h2>
+            <div class="membership-card np">
+                <h2>Non Profit Membership Level</h2>
+                <dialog>
+                    <div class="modal-top">
+                        <h3>Non-Profit Membership</h3>
+                        <button>X</button>
+                    </div>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Access to all trainings</li>
+                        <li>Cost: $0.00/Month</li>
+                    </ul>
+                </dialog>
+                <button id="np-modal-btn">Learn More</button>
+            </div>
+            <div class="membership-card bronze">
+                <h2>Bronze Membership Level</h2>
+                <dialog>
+                    <div class="modal-top">
+                        <h3>Bronze Membership</h3>
+                        <button>X</button>
+                    </div>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Access to all trainings</li>
+                        <li>Cost: $100.00/Month</li>
+                    </ul>
+                </dialog>
+                <button id="bnz-modal-btn">Learn More</button>
+            </div>
+            <div class="membership-card silver">
+                <h2>Silver Membership Level</h2>
+                <dialog>
+                    <div class="modal-top">
+                        <h3>Silver Membership</h3>
+                        <button>X</button>
+                    </div>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Access to all trainings</li>
+                        <li>Exclusive Advertisements</li>
+                        <li>Cost: $250.00/Month</li>
+                    </ul>
+                </dialog>
+                <button id="slv-modal-btn">Learn More</button>
+            </div>
+            <div class="membership-card gold">
+                <h2>Gold Membership Level</h2>
+                <dialog>
+                    <div class="modal-top">
+                        <h3>Gold Membership</h3>
+                        <button>X</button>
+                    </div>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Access to all trainings</li>
+                        <li>Exclusive Advertisements</li>
+                        <li>Major Event Discounts</li>
+                        <li>Cost: $500.00/Month</li>
+                    </ul>
+                </dialog>
+                <button id="gld-modal-btn">Learn More</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="chamber-info">
+            <p>Provo Chamber of Commerce</p>
+            <p>100 S St</p>
+            <p>Provo, Utah 84601</p>
+            <p>info@provocc.org</p>
+            <p>(385) 222-2048</p>
+        </div>    
+        <div class="social-links">
+            <a href="https://youtube.com">
+                <img src="images/icons8-youtube-30.png" alt="Youtube">
+            </a>            
+            <a href="https://x.com">
+                <img src="images/icons8-x-50.png" alt="Youtube">
+            </a>            
+            <a href="https://linkedin.com">
+                <img src="images/icons8-linkedin-30.png" alt="Youtube">
+            </a>
+        </div>
+        <div class="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Adam Lind</p>
+            <p>&copy; <span id="currentyear"></span> Provo Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
