@@ -25,4 +25,8 @@
         width: 90%;
     }
 
+    dialog[open] {
+        width: 400px;
+    }
+
 }
