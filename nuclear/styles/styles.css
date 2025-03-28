@@ -1,0 +1,382 @@
+:root {
+    --primary-color: #2B4162;
+    --secondary-color: #D7B377;
+    --accent-color: #F5F0F6;
+    font-family: roboto;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+}
+
+.header-top {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header img {
+    width: 25px;
+    height: 25px;
+}
+
+.keynote-tickets {
+    position: relative;
+}
+
+.keynote-tickets img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: gray;
+}
+
+.keynote-tickets a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--accent-color);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.subtitle {
+    padding: 0px 10px;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.title p {
+    margin: 0;
+}
+
+.head-rearrange {
+    padding: 0;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 10px;
+	display: block;
+	font-size: 3rem;
+	font-weight:700;
+	text-decoration: none;
+	color: white;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.list-wrapper {
+    display: none;
+}
+
+.list-wrapper.show {
+    display: inline;
+}
+
+nav {
+	background-color: var(--primary-color);
+    width: 100%;
+}
+.navigation {
+	list-style: none;
+    padding: 0;
+	margin: 0 auto;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+    padding: 10px;
+	display: block;
+	text-align: center;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: white;
+    background-color: #343434;
+    font-size: 24px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.navigation a:hover, .navigation a:active {
+    box-shadow: inset 800px 0 0 0 rgb(188, 255, 180);
+    color: black;
+}
+
+.navigation a.active {
+    color: black;
+    background-color: rgb(188, 255, 180); 
+}
+
+.show li {
+	display: block;
+    position: relative;
+    width: 100%;
+}
+
+.disappear {
+    display: none;
+}
+
+#menu.show::before {
+	content: "X";
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    padding-top: 10px;
+}
+
+main {
+    margin: 0 5px;
+}
+
+main h1 {
+    color: black;
+    margin: 0
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content > div {
+}
+
+.main-content div > h2 {
+    background-color: var(--secondary-color);
+    margin: 0;
+    text-align: center;
+}
+
+.main-content div > div {
+    color: black;
+}
+
+.events {
+    height: 100px;
+    background-color: var(--accent-color); 
+}
+
+.events div {
+    padding: 10px;
+}
+
+.current-weather {
+    height: 100%;
+    background-color: var(--accent-color); 
+}
+
+.current-weather > div {
+    display: flex;
+    padding: 10px;
+}
+
+.weather-forecast {
+    height: 100%;
+    background-color: var(--accent-color);
+}
+
+.weather-forecast div {
+    padding: 10px;
+}
+
+.temp {
+    font-weight: bold;
+}
+
+.current-weather-content {
+    gap: 10px;
+}
+
+.current-weather-content div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.current-weather-content p {
+    margin: 2px 0;
+}
+
+figure {
+    margin: 0 10px;
+}
+
+figure img {
+    width: 75px;
+}
+
+.current-weather-content figcaption {
+    text-align: center;
+    font-size: 1.1rem;
+    width: 75px;
+    font-weight: bold;
+}
+
+#current-temp {
+    font-size: 1.5rem;
+}
+
+#weather-icon {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+.weather-forecast p {
+    font-size: 1.4rem;
+}
+
+.filter {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    text-align: center;
+    border-bottom: 2px solid gray;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.filter input {
+    position: fixed;
+    opacity: 0;
+}
+
+.filter label {
+    margin: 10px;
+    width: 150px;
+    padding: 4px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+.filter label:hover {
+    background-color: gray;
+}
+
+.filter input:checked+label {
+    background-color: rgb(188, 255, 180);
+    color: black;
+} 
+
+.business-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 559px;
+}
+
+.member {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.member h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+}
+
+.member p, .member a {
+    margin: 5px 0;
+    color: black;
+}
+
+.member-card-title {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 0;
+}
+
+.member-card-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+}
+
+.member-image {
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.member-info {
+    padding: 10px;
+}
+
+.member-info p {
+    font-size: .9rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    margin-top: 10px;
+    height: 309px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.social-links a {
+    background-color: var(--secondary-color);
+    height: 20px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.social-links a img {
+    height: 20px;
+    width: 20px;
+}
+
+.chamber-info > p:first-child {
+    font-weight: bold;
+}

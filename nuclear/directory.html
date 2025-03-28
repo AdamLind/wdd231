@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory Page</title>
+    <meta
+    name="description"
+    content="Chamber Directory Page for Adam Lind in the WDD 231 - Web Front-End Development class."
+    />
+    <meta name="author" content="Adam Lind">
+
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Chamber Directory Page assignment for Adam Lind in the WDD 231 class.">
+    <meta property="og:image" content="https://adamlind.github.io/wdd231/chamber/images/hero_optimized_min.png">
+    <meta property="og:url" content="https://adamlind.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+
+    <script src="scripts/hamburgermenu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="title">
+                <img src="images/android-chrome-192x192.png" alt="Adam Lind">
+                <div class="subtitle">
+                    <h2>Provo</h2>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <nav class="list-wrapper">
+                <ul class="navigation">
+                    <li>
+                    <a href="/wdd231/chamber/" rel="noreferrer">Home</a>
+                    </li>
+                    <li>
+                    <a class="active" href="/wdd231/chamber/directory.html" rel="noreferrer">Directory</a>
+                    </li>
+                    <li>
+                    <a href="/wdd231/chamber/join.html" rel="noreferrer">Join</a>
+                    </li>
+                    <li>
+                    <a href="/wdd231/chamber/discover.html" rel="noreferrer">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+            <a id="menu" href="#" aria-label="Hamburger Menu"></a>
+        </div>
+    </header>
+    <main>
+        <h1>Chamber of Commerce Directory</h1>
+        <div class="filter">
+            <input type="radio" id="grid" name="display" value="GRID" checked/>
+            <label for="grid">Grid</label>
+            <input type="radio" id="list" name="display" value="LIST" />
+            <label for="list">List</label>
+        </div>
+        <div class="business-cards grid-display"></div>
+    </main>
+    <footer>
+        <div class="chamber-info">
+            <p>Provo Chamber of Commerce</p>
+            <p>100 S St</p>
+            <p>Provo, Utah 84601</p>
+            <p>info@provocc.org</p>
+            <p>(385) 222-2048</p>
+        </div>    
+        <div class="social-links">
+            <a href="https://youtube.com">
+                <img src="images/icons8-youtube-30.png" alt="Youtube">
+            </a>            
+            <a href="https://x.com">
+                <img src="images/icons8-x-50.png" alt="Youtube">
+            </a>            
+            <a href="https://linkedin.com">
+                <img src="images/icons8-linkedin-30.png" alt="Youtube">
+            </a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Adam Lind</p>
+            <p>&copy; <span id="currentyear"></span> Provo Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
