@@ -15,7 +15,7 @@ const dayAfterForecast = document.querySelector('#day-after-forecast');
 
 
 
-const currentUrl = 'https://www.nrc.gov/public-involve/rss?feed=event'
+const currentUrl = 'https://www.nrc.gov/public-involve/rss.html?feed=plant-status'
 
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.23&lon=-111.66&appid=6ef125db37e311a81ba90af94ac76ec1&units=imperial'
 
