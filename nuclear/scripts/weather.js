@@ -19,9 +19,9 @@ const currentUrl = 'https://www.nrc.gov/public-involve/rss?feed=event'
 
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.23&lon=-111.66&appid=6ef125db37e311a81ba90af94ac76ec1&units=imperial'
 
-async function apiFetch(currentUrl) {
+async function apiFetch(url) {
     try {
-      const response = await fetch(currentUrl);
+      const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
         console.log(data); // testing only
@@ -75,5 +75,5 @@ function displayForecastResults(data) {
     dayAfterForecast.innerHTML = `${data.list[16].main.temp}&deg;F`
 }
 
-apiFetch(currentUrl, 1);
+apiFetch(currentUrl);
 // apiFetch(forecastUrl, 2);
