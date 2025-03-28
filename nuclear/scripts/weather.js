@@ -15,26 +15,26 @@ const dayAfterForecast = document.querySelector('#day-after-forecast');
 
 
 
-const currentUrl = 'http://adams.nrc.gov/wba/services/search/advanced/nrc?q=<data_parameters>&qn=<query_name>&tab=content-searchpars&s=<sort_property>&so=ASC|DESC'
+const currentUrl = 'https://www.nrc.gov/public-involve/rss?feed=event'
 
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.23&lon=-111.66&appid=6ef125db37e311a81ba90af94ac76ec1&units=imperial'
 
-async function apiFetch(url, functionNum) {
+async function apiFetch(currentUrl) {
     try {
-      const response = await fetch(url);
+      const response = await fetch(currentUrl);
       if (response.ok) {
         const data = await response.json();
-        // console.log(data); // testing only
-        if (functionNum == 1)
-        {   
-            console.log(data)
-            displayCurrentResults(data); // uncomment when ready
-        }
-        else if (functionNum == 2)
-        {
-            console.log(data)
-            displayForecastResults(data);
-        }
+        console.log(data); // testing only
+        // if (functionNum == 1)
+        // {   
+        //     console.log(data)
+        //     displayCurrentResults(data); // uncomment when ready
+        // }
+        // else if (functionNum == 2)
+        // {
+        //     console.log(data)
+        //     displayForecastResults(data);
+        // }
     } else {
         throw Error(await response.text());
     }
