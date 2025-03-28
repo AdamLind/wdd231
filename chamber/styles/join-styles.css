@@ -13,6 +13,11 @@
     }
 }
 
+main h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
 section {
     display: flex;
     flex-direction: column;
