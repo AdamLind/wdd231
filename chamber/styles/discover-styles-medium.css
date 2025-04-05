@@ -12,6 +12,7 @@
 
     .interest img {
         width: 300px;
+        height: 200px;
     }
 
     .interest img:hover {box-shadow: 0 0 50px #333;}
