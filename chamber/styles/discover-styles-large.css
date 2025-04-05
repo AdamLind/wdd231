@@ -1,0 +1,16 @@
+@media screen and (min-width: 1025px) {
+    main h1 {
+        color: blue;
+    }
+    
+    #item-container {
+        grid-template-areas:
+            "a a";
+        gap: 10px;
+    }
+
+    .interest {
+        display: inline;
+        padding: 10px;
+    }
+}

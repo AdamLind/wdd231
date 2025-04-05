@@ -74,7 +74,7 @@ header img {
     position: absolute;
     top: 0;
     right: 10px;
-    padding: 10px;
+    padding: 0 10px;
 	display: block;
 	font-size: 3rem;
 	font-weight:700;

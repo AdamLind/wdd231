@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Bridal Veil Falls",
+      "address": "600 N 9000 S, Provo, UT 84604",
+      "image_link": "./images/bridal-veil-falls.webp",
+      "description": "Bridal Veil Falls is one of Utah's most famous waterfalls, located in Provo Canyon. With a stunning 607-foot drop, it’s accessible to visitors with both a short hike or a scenic drive. The waterfall is perfect for a picnic or a quick nature walk and is especially breathtaking after a rainstorm."
+    },
+    {
+      "name": "Provo Canyon",
+      "address": "Provo Canyon, Provo, UT",
+      "image_link": "./images/provo-canyon.webp",
+      "description": "Provo Canyon is a beautiful, rugged canyon filled with diverse wildlife, trails, and scenic views. It is home to several iconic spots, including Bridal Veil Falls, and offers activities like hiking, biking, and even winter sports. It's a peaceful escape into nature while still being close to the city."
+    },
+    {
+      "name": "Mount Timpanogos",
+      "address": "Mount Timpanogos Trailhead, American Fork, UT 84003",
+      "image_link": "./images/mount-timpanogos.webp",
+      "description": "Mount Timpanogos is one of the tallest peaks in the Wasatch Range, with an elevation of 12,005 feet. It is a favorite for avid hikers, offering one of the most scenic and challenging hikes in Utah. The Timpanogos Trail provides amazing panoramic views of Provo Canyon and the Utah Valley below."
+    },
+    {
+      "name": "BYU Museum of Art",
+      "address": "53 S 1100 E, Provo, UT 84606",
+      "image_link": "./images/BYU-Museum.webp",
+      "description": "Located on the Brigham Young University campus, the BYU Museum of Art is a world-class museum offering a variety of exhibitions, from contemporary art to religious and historical pieces. It’s a cultural hub in Provo, with rotating exhibits and engaging programs, making it a must-visit for art lovers."
+    },
+    {
+      "name": "The Riverwoods Shopping Area",
+      "address": "4801 N University Ave, Provo, UT 84604",
+      "image_link": "./images/riverwoods.webp",
+      "description": "The Riverwoods is an outdoor shopping center that combines retail therapy with scenic views. With boutique stores, restaurants, and a relaxing atmosphere, it's a great place to spend a day shopping or enjoying a meal. The beautiful setting near the Provo River adds to the charm, making it a perfect place to unwind."
+    },
+    {
+      "name": "Utah Lake State Park",
+      "address": "4400 W 700 S, Provo, UT 84601",
+      "image_link": "./images/utah-lake.webp",
+      "description": "Utah Lake State Park is an expansive recreational area situated on the shores of Utah Lake. It offers activities like boating, fishing, picnicking, and wildlife watching. The park is perfect for those who want to relax by the water, enjoy a scenic walk, or take part in water sports. It also has spectacular views of the lake and surrounding mountains."
+    },
+    {
+      "name": "Provo City Center Temple",
+      "address": "50 W 200 N, Provo, UT 84601",
+      "image_link": "./images/provo-temple.webp",
+      "description": "The Provo City Center Temple, a strikingly beautiful building, was once the Provo Tabernacle before it was transformed into a temple by The Church of Jesus Christ of Latter-day Saints. Its stunning architecture and historic significance make it a unique and peaceful place to visit. The temple is open to the public for guided tours on certain occasions."
+    },
+    {
+      "name": "The Provo Pioneer Village",
+      "address": "300 W 200 N, Provo, UT 84601",
+      "image_link": "./images/pioneer-village.webp",
+      "description": "The Provo Pioneer Village offers a fun, interactive glimpse into life during the 1800s. The village features a variety of restored pioneer-era buildings and artifacts, making it a great stop for history buffs and families alike. Visitors can tour the site, try hands-on activities, and learn about the early settlers of Utah."
+    }
+  ]
+  

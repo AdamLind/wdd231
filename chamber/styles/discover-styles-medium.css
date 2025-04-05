@@ -1,0 +1,23 @@
+@media screen and (min-width: 641px) {
+    main h1 {
+        color: red;
+    }
+    
+    #item-container {
+
+    }
+
+    .interest {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .interest img {
+        width: 300px;
+    }
+
+    .interest-card-content {
+        padding-right: 20px;
+    }
+}
