@@ -1,10 +1,30 @@
 const message = document.getElementById("message");
 const cardContainer = document.getElementById("item-container");
-const visits = localStorage.getItem('visitCount');
+let visitCount = localStorage.getItem('visitCount');
 const visitTime = localStorage.getItem('dateVisited');
+const currentTime = Date.now()
+const daysSince = (currentTime - visitTime) / 86400000
+
+if (visitCount === null) {
+    visitCount = 0;
+} else {
+    visitCount = parseInt(visitCount);
+}
+visitCount++;
+
+if (visitCount == 1) {
+    message.textContent = "Welcome! Let us know if you have any questions.";
+}
+else if (daysSince < 1) {
+    message.textContent = "Back so soon! Awesome!";
+}
+else if (daysSince > 1) {
+    message.textContent = `You last visited ${Math.floor(daysSince)} days ago.`;
+}
+
+localStorage.setItem('visitCount', visitCount.toString());
 
 function visitMessage() {
-    console.log(visits)
     console.log(visitTime)
     localStorage.setItem('dateVisited', Date.now()); // Stores a string value
 }

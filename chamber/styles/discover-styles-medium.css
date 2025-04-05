@@ -17,6 +17,8 @@
         width: 300px;
     }
 
+    .interest img:hover {box-shadow: 0 0 50px #333;}
+
     .interest-card-content {
         padding-right: 20px;
     }
