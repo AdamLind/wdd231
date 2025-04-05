@@ -4,6 +4,7 @@ let visitCount = localStorage.getItem('visitCount');
 const visitTime = localStorage.getItem('dateVisited');
 const currentTime = Date.now()
 const daysSince = (currentTime - visitTime) / 86400000
+let counter = 0
 
 if (visitCount === null) {
     visitCount = 0;
@@ -45,6 +46,7 @@ async function getData() {
 }
 
 function createCards(interestList) { 
+    counter++
     cardContainer.innerHTML = ''; // Clears all child nodes
     interestList.map(interest => {
         const card = document.createElement("div");
@@ -66,10 +68,18 @@ function createCards(interestList) {
         ${interest.name}
         `
         
-        cardImage.innerHTML = 
-        `
-        <img class="interest-image" src="${interest.image_link}" alt="Image" />
-        `
+        if (counter > 2) {
+            cardImage.innerHTML = 
+            `
+            <img class="interest-image" src="${interest.image_link}" alt="Image" loading="lazy"/>
+            `
+        }
+        else {
+            cardImage.innerHTML = 
+            `
+            <img class="interest-image" src="${interest.image_link}" alt="Image"/>
+            `
+        }
         
         cardAddress.innerHTML =
         `
