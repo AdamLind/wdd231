@@ -1,8 +1,4 @@
 @media screen and (min-width: 1025px) {
-    main h1 {
-        color: blue;
-    }
-    
     #item-container {
         grid-template-areas:
             "a a";
