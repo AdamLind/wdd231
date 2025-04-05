@@ -46,9 +46,10 @@ async function getData() {
 }
 
 function createCards(interestList) { 
-    counter++
     cardContainer.innerHTML = ''; // Clears all child nodes
     interestList.map(interest => {
+        counter++
+        console.log(counter)
         const card = document.createElement("div");
         const cardTitle = document.createElement("h2")
         const cardContent = document.createElement("div")
