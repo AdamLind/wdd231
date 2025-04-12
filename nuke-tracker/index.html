@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Nuke Tracker - Homepage</title>
+    <meta
+      name="description"
+      content="Final project for Adam Lind in the WDD 231 - Web Frontend Development 1 class."
+  >
+    <meta name="author" content="Adam Lind">
+
+    <meta property="og:title" content="Nuke Tracker Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Nuke Tracker assignment for Adam Lind in the WDD 231 class.">
+    <meta property="og:image" content="https://adamlind.github.io/wdd231/nuke-tracker/images/reactor-large.jpg">
+    <meta property="og:url" content="https://adamlind.github.io/wdd231/nuke-tracker/index.html">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    >
+
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/gallery.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="header">
+          <img src="./images/general-favicon.png" alt="nuclear symbol">
+          <h1 class="title">Home</h1>
+        </div>
+        <nav class="list-wrapper">
+          <ul class="navigation">
+            <li>
+              <a
+                href="index.html"
+                id="active"
+                rel="noreferrer"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="tracking.html"
+                rel="noreferrer"
+                >Tracking</a
+              >
+            </li>
+            <li>
+              <a
+                href="mission.html"
+                rel="noreferrer"
+                >Mission</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a id="menu" href="#"></a>
+      </div>
+      <div class="keynote-tickets">
+        <picture>
+            <source media="(min-width:740px)" srcset="images/nuclear_reactor_min.webp">
+            <img src="images/small_reactor-min.webp" alt="hero image">
+        </picture>
+        <h1>Nuke Tracker</h1>
+      </div>
+    </header>
+    <main class="main-wrapper">
+      <div class="description">
+        <h2>A Little About Nuke Tracker</h2>
+        <p>
+          <span class="bold">Nuke Tracker</span> is a data-driven web platform designed to monitor, analyze, and visualize nuclear power plant outages across the country. By collecting real-time and historical data on scheduled and unscheduled outages, the site generates dynamic, interactive graphs and dashboards to help users spot trends, assess regional impacts, and better understand the nuclear grid’s operational status.
+        </p>
+      </div>
+      <ul class="bottom-links">
+        <li>
+          <a href="mission.html" rel="noreferrer">Our Mission</a>
+        </li>
+        <li>
+          <a href="tracking.html" rel="noreferrer">Tracker</a>
+        </li>
+      </ul>
+      <h2>Nuclear Reactor Spotlight</h2>
+      <div id="home-images" class="home-images"></div>
+      <dialog>
+        <div class="modal-top">
+            <h3>Top 10 Nuclear Power Plants</h3>
+            <button>X</button>
+        </div>
+        <div id="modal-interior"></div>
+      </dialog>
+      <button id="modal-btn">View All Stations</button>
+      <div class="contact-section">
+        <h2>Contact Us!</h2>
+        <a href="">Instagram handle</a>
+        <a href="">Facebook handle</a>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> ♦️ Nuke Tracker ♦️ UT, United
+        States of America
+      </p>
+      <p id="lastModified"></p>
+      <div class="attributions">
+        <a href="/nuke-tracker/attributions.html">Attributions</a>
+      </div>
+    </footer>
+  </body>
+  </html>
+  

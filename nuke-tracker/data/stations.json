@@ -1,0 +1,62 @@
+[
+    {
+      "name": "Palo Verde Generating Station",
+      "completed": "1986–1988",
+      "capacity_mwe": 3937,
+      "image": "./images/palo-verde.jpg"
+    },
+    {
+      "name": "Braidwood Generating Station",
+      "completed": "1987 (Unit 1), 1989 (Unit 2)",
+      "capacity_mwe": 1137,
+      "image": "./images/braidwood.jpg"
+    },
+    {
+      "name": "Vogtle Electric Generating Plant",
+      "completed": "1987 (Unit 1), 1989 (Unit 2)",
+      "capacity_mwe": 4536,
+      "image": "./images/vogtle.jpg"
+    },
+    {
+      "name": "Diablo Canyon Power Plant",
+      "completed": "1985 (Unit 1), 1986 (Unit 2)",
+      "capacity_mwe": 2268,
+      "image": "./images/diablo-canyon.webp"
+    },
+    {
+      "name": "Turkey Point Nuclear Generating Station",
+      "completed": "1972 (Unit 3), 1973 (Unit 4)",
+      "capacity_mwe": 1450,
+      "image": "./images/turkey-point.jpg"
+    },
+    {
+      "name": "Susquehanna Steam Electric Station",
+      "completed": "1982 (Unit 1), 1984 (Unit 2)",
+      "capacity_mwe": 2846,
+      "image": "./images/susquehanna.jpg"
+    },
+    {
+      "name": "South Texas Project",
+      "completed": "1988 (Unit 1), 1989 (Unit 2)",
+      "capacity_mwe": 2666,
+      "image": "./images/south-texas.jpg"
+    },
+    {
+      "name": "Millstone Power Station",
+      "completed": "1970 (Unit 1), 1975 (Unit 2), 1986 (Unit 3)",
+      "capacity_mwe": 2280,
+      "image": "./images/millstone.jpg"
+    },
+    {
+      "name": "Oconee Nuclear Station",
+      "completed": "1973 (Unit 1), 1974 (Unit 2), 1975 (Unit 3)",
+      "capacity_mwe": 2700,
+      "image": "./images/oconee.jpg"
+    },
+    {
+      "name": "Davis-Besse Nuclear Power Station",
+      "completed": "1977",
+      "capacity_mwe": 908,
+      "image": "./images/davis-besse.jpg"
+    }
+  ]

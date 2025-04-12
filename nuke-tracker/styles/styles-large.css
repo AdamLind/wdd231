@@ -1,0 +1,88 @@
+@media screen and (min-width: 740px) {        
+    .keynote-tickets {
+        width: 90%;
+        position: relative;
+        align-self: center;
+        border-radius: 0 0 20px 20px;
+        overflow: hidden;
+        border-width: 0 2px 2px 2px;
+        border-style: solid; 
+        border-color: var(--accent-color1);
+    }
+
+    .keynote-tickets h1 {
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        color: var(--secondary-color);
+        font-size: 3rem;
+        text-shadow: 2px 5px 4px var(--accent-color2);
+    }
+
+    .list-wrapper {
+        position: static;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: auto;
+        color: var(--secondary-color);
+        height: 51px;
+        margin: 0;
+        margin-right: 50px;
+        border-radius: 0;
+        transition: 0s;
+    }
+    
+    .list-wrapper.show {
+        height: 51px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .navigation li {
+        display: inline; /* change state in small view */
+        flex: 1 1 100%;
+        background-color: var(--primary-color);
+    }
+    
+    .navigation a {
+        text-align: center;
+        font-size: 1rem;
+        color: var(--secondary-color);
+    }
+
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .active {
+        color: var(--primary-color);
+    }
+    
+    #menu {
+        display: none;
+	}
+
+
+    .card {
+        width: 500px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #modal-interior {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    dialog .card {
+        width: 250px;
+    }
+}

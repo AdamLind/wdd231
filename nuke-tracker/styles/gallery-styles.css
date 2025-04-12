@@ -1,0 +1,44 @@
+h2, h3 {
+    margin: 0;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: 355px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 0 0 15px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+}
+
+.card p {
+    margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 355px);
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+    }

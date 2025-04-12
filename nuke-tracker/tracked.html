@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+    name="description"
+    content="Final project for Adam Lind in the WDD 131 - Dynamic Web Fundamentals class."
+    />
+
+    <title>Nuke Tracker - Tracked!</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/tracked.css" />
+    <link rel="stylesheet" href="styles/tracked-large.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    rel="stylesheet"
+    />
+
+    <script type="module" src="scripts/tracked.mjs" defer></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    
+</head>
+<body>
+    <header>
+        <img src="./images/general-favicon.png" alt="nuclear symbol">
+        <a href="/nuke-tracker/tracking.html">Return to tracker</a>
+        <img src="./images/general-favicon.png" alt="nuclear symbol">
+    </header>
+    <div id="visit-counter"></div>
+    <div id="ticket">
+        <h1 id="ticket-head"></h1>
+        <div id="my-chart"></div>
+        <div id="info">
+            Plant Detailed Information
+        </div>
+        <table id="data">
+            <tr>
+                <th>Date</th>
+                <th>Capacity</th>
+                <th>Outage (MW)</th>
+                <th>Outage (%)</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

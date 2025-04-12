@@ -1,0 +1,351 @@
+:root {
+    --primary-color: #30323D;
+    --secondary-color: #E8C547;
+    --active-color:rgb(177, 255, 209);
+    --accent-color1: #60B2E5;
+    --accent-color2: #3A7D44;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.modal-open {
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+#active {
+    background-color: var(--active-color);
+    color: var(--primary-color);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+ul {
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+    margin: 0 0 10px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header img {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 20px;
+    margin: 9px 0 9px 30px;
+}
+
+.header-top {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.keynote-tickets h1 {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.keynote-tickets img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: block;
+    background-color: gray;
+    box-shadow: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#menu {
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+    margin-right: 30px;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.list-wrapper {
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0px;
+    width: 100%;
+    max-width: 380px;
+    transition: height .6s;
+    overflow: hidden;
+    border-radius: 0 0 0 10px;
+}
+
+.list-wrapper.show {
+    height: 154px;
+}
+
+.navigation {
+    list-style: none;
+	margin: 0 auto;
+    width: 100%;
+	max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+    background-color: var(--secondary-color);
+}
+.navigation a {
+    display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--primary-color);
+	font-weight: 600;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+    top: 10px;
+    right: 30px;
+}
+
+.home-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+    border-radius: 5px;
+    width: 250px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card h2, p {
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+img {
+    border-radius: 2px;
+    width: 90%;
+}
+
+img:hover {
+    box-shadow: 0px 0px 15px;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: var(--accent-color1)
+}
+
+.description {
+    margin: 20px 0;
+    padding: 0 20px 20px 20px;
+    max-width: 664px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+    text-align: center;
+    width: 80%;
+}
+
+#modal-btn {
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    background-color: var(--accent-color1);
+    border-radius: 5px;
+}
+
+dialog {
+    height: 75%;
+    padding: 0;
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 16px;
+}
+
+#modal-interior {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+dialog .card {
+    flex-direction: column;
+    width: 80%;
+    margin: 0
+}
+
+.bottom-links {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bottom-links li {
+    background-color: var(--primary-color);
+    width: 80%;
+    max-width: 700px;
+    min-width: 275px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    align-self: center;
+    transition: all .5s;
+}
+
+
+.bottom-links a:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.bottom-links a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-weight: 600;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.contact-section {
+    text-align: center;
+    padding: 20px 0;
+    width: 80%;
+    max-width: 700px;
+    min-width: 275px;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+}
+
+.contact-section h2, h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.contact-section a {
+    font-size: 15px;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    min-width: 275px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: var(--secondary-color);
+    font-size: 18px;
+    padding: 15px;
+    margin: 0;
+}
+
+.attributions {
+    background-color: var(--primary-color);
+    padding: 20px 0 30px 0;
+}
+
+.attributions a {
+    color: var(--primary-color);
+    background-color: var(--active-color);
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
